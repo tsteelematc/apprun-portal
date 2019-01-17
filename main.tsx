@@ -9,19 +9,25 @@ app.on('//', route => {
   item && item.parentElement.classList.add('is-selected');
 })
 
+const linkStyles = {
+  // backgroundColor: 'red'
+  textDecorationColor: 'inherit'
+  , textDecorationLine: 'none'
+  , textDecorationStyle: 'inherit'
+  , color: 'inherit'
+};
+
 const view = state => <div className="container">
   <nav className="ms-Pivot">
     <ul className="ms-Pivot-links">
       <li className="ms-Pivot-link is-selected">
-        <a className="nav-link" href="#Home">Home
-          <span className="sr-only">(current)</span>
-        </a>
+        <a className="" style={linkStyles} href="#Home">Home</a>
       </li>
       <li className="ms-Pivot-link">
-        <a className="nav-link" href="#About">About</a>
+        <a className="" style={linkStyles} href="#About">About</a>
       </li>
       <li className="ms-Pivot-link" href="#Contact">
-        <a className="" href="#Contact">Contact</a>
+        <a className="" style={linkStyles} href="#Contact">Contact</a>
       </li>
     </ul>
   </nav>
