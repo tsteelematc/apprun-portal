@@ -24,7 +24,7 @@
   },
   "dependencies": {
     "apprun": "^1.15.2",
-    "office-ui-fabric-core": "^9.6.1"
+    "office-ui-fabric-js": "^1.5.0"
   },
   "jest": {
     "transform": {
