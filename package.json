@@ -23,7 +23,8 @@
     "webpack-dev-server": "^3.1.14"
   },
   "dependencies": {
-    "apprun": "^1.15.2"
+    "apprun": "^1.15.2",
+    "office-ui-fabric-core": "^9.6.1"
   },
   "jest": {
     "transform": {
