@@ -21,7 +21,8 @@ const view = state => <div className="container">
         <a className="nav-link" href="#About">About</a>
       </li>
       <li className="ms-Pivot-link">
-        <a className="nav-link" href="#Contact">Contact</a>
+        Contact
+        {/* <a className="nav-link" href="#Contact">Contact</a> */}
       </li>
     </ul>
   </nav>
