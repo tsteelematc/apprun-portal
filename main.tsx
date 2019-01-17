@@ -3,10 +3,10 @@ import app from 'apprun';
 app.on('#', _ => app.run('#Home'))
 
 app.on('//', route => {
-  const menus = document.querySelectorAll('.navbar-nav li');
-  for (let i = 0; i < menus.length; ++i) menus[i].classList.remove('active');
+  const menus = document.querySelectorAll('.ms-Pivot-links li');
+  for (let i = 0; i < menus.length; ++i) menus[i].classList.remove('is-selected');
   const item = document.querySelector(`[href='${route}']`);
-  item && item.parentElement.classList.add('active');
+  item && item.parentElement.classList.add('is-selected');
 })
 
 const view = state => <div className="container">
@@ -20,9 +20,8 @@ const view = state => <div className="container">
       <li className="ms-Pivot-link">
         <a className="nav-link" href="#About">About</a>
       </li>
-      <li className="ms-Pivot-link">
-        Contact
-        {/* <a className="nav-link" href="#Contact">Contact</a> */}
+      <li className="ms-Pivot-link" href="#Contact">
+        <a className="" href="#Contact">Contact</a>
       </li>
     </ul>
   </nav>
