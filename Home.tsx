@@ -20,7 +20,7 @@ export default class HomeComponent extends Component {
       </button>
       <br/>
       <br/>
-      <Button label="Cat II" type="primary" disabled={false} onclick={e => this.run('Cat', e)} />
+      <Button label="Cat II" type="default" disabled={false} onclick={e => this.run('Cat', e)} />
       <br/>
       <br/>
       <br/>
